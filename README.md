@@ -11,5 +11,5 @@ FROM cn-ubuntu:14.04
 
 ```
 docker pull shenjinti/cn-ubuntu:14.04
-docker run --name some-cn-ubuntu shenjinti/cn-ubuntu:14.04
+docker run -t -i --name some-cn-ubuntu shenjinti/cn-ubuntu:14.04 /bin/bash
 ```
