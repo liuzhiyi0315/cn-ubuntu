@@ -1,4 +1,4 @@
-#zhiyi/build-multilib
+#zhiyi/gdbserver
 
 * Your Dockerfile :
 ```
@@ -8,6 +8,6 @@ FROM ubuntu:latest
 * Run:
 
 ```
-docker pull zhiyi/build-multilib
-docker run -t -i zhiyi/build-multilib /bin/bash
+docker pull zhiyi/gdbserver
+docker run -e PORT=1234 -e EXEC=xxx -v xxx:xxx zhiyi/gdbserver
 ```
