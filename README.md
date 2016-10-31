@@ -1,15 +1,13 @@
-#shenjinti/cn-ubuntu
-
-Only for Chinese user, using china's local mirrors.
+#zhiyi/build-multilib
 
 * Your Dockerfile :
 ```
-FROM cn-ubuntu:14.04
+FROM ubuntu:latest
 ````
 
 * Run:
 
 ```
-docker pull shenjinti/cn-ubuntu:14.04
-docker run -t -i --name some-cn-ubuntu shenjinti/cn-ubuntu:14.04 /bin/bash
+docker pull zhiyi/build-multilib
+docker run -t -i zhiyi/build-multilib /bin/bash
 ```
