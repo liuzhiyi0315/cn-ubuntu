@@ -9,5 +9,5 @@ FROM ubuntu:latest
 
 ```
 docker pull zhiyi/gdbserver
-docker run -e EXEC=xxx -v xxx:xxx zhiyi/gdbserver
+docker run --privileged -e EXEC=/mnt/helloworld -p 10234:10234 -v /Users/projects/helloworld/bin/:/mnt/ zhiyi/gdbserver
 ```
