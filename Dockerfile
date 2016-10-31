@@ -12,5 +12,5 @@ RUN apt-get -qq update && \
 EXPOSE 10234/tcp
 EXPOSE 10234/udp
 
-CMD ["/usr/bin/gdbserver", "127.0.0.1:10234", "$EXEC"]
+CMD [ "sh", "-c", "gdbserver 127.0.0.1:10234 $EXEC" ]
 
