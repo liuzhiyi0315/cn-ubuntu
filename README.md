@@ -9,5 +9,5 @@ FROM ubuntu:latest
 
 ```
 docker pull zhiyi/gdbserver
-docker run -e PORT=1234 -e EXEC=xxx -v xxx:xxx zhiyi/gdbserver
+docker run -e EXEC=xxx -v xxx:xxx zhiyi/gdbserver
 ```
