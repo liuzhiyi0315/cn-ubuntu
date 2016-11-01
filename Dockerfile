@@ -8,5 +8,8 @@ RUN apt-get -qq update && \
        build-essential python &&\
      rm -rf /var/lib/apt/lists/* &&\
      mkdir -p /root/build
-CMD [ "sh", "-c", "/root/build/start.sh $PARAM" ]
+ADD start.sh /start.sh
+
+VOLUME ["/mnt"]
+CMD ["sh", "/start.sh"]
 
